@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background: #333;
+    z-index: 5;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12%;
+}
+
+.navItems {
+    display: flex;
+}
+
+.navItems div {
+    padding: 20px;
+}
+
+.sectionWithImage {
+    background: url("https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped");
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center 70%;
+    z-index: 1;
+}
+
+.sectionWithImage::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.2);
+}
+
+.content {
+    display: flex;
+    height: 90%;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.content a {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 13px 26px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    text-align: center;
+}
+
+.serviceSection .about .contact {
+    z-index: 4;
+    background-color: #f2f2f2;
+}
+
+.serviceHeading>h1,
+p {
+    padding: 5px;
+}
+
+.serviceHeading>h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.cardDetails>div>img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cardDetails>div {
+    margin: auto;
+}
+
+.cards>.cardDetails {
+    background-color: white;
+    align-items: center;
+    height: 330px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+}
+
+.cardDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardsData>h2 {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.cardsData>p {
+    color: #000000;
+    line-height: 1.5rem;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+
+section.about {
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    font-size: 18px;
+}
+
+.about .company-info p {
+    text-align: left;
+}
+
+.about h3 {
+    margin: 18px 0 6px 0;
+}
+
+.about .team {
+    width: 100%;
+}
+
+.about .team ul {
+    padding-left: 20px;
+}
+
+.cards .card p {
+    padding: 0 15px;
+    margin-top: 5px;
+}
+
+.about .row {
+    padding: 0 10px;
+}
+
+.contact .row {
+    margin: 60px 0 90px;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .row .col {
+    padding: 0 10px;
+    width: calc(100% / 2 - 50px);
+}
+
+.contact .col p {
+    margin-bottom: 10px;
+}
+
+.contact .col p i {
+    color: #7a7a7a;
+    margin-right: 10px;
+}
+
+.contact input {
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #bfbfbf;
+}
+
+.contact textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    height: 150px;
+    outline: none;
+    resize: vertical;
+    border: 1px solid #bfbfbf;
+}
+
+.contact button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #333;
+    transition: 0.2s ease;
+}
+
+.contact button:hover {
+    background: #525252;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
